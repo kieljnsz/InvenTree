@@ -33,11 +33,11 @@
         </li>
         {% endif %}
         {% if roles.build.view %}
-        <li class='nav-item'>
+        {% comment %} <li class='nav-item'>
           <a class='nav-link' href="{% url 'build-index' %}">
             <span class='fas fa-tools icon-header'></span>{% trans "Build" %}
           </a>
-        </li>
+        </li> {% endcomment %}
         {% endif %}
         {% if roles.purchase_order.view %}
         <li class='nav-item dropdown'>
@@ -52,7 +52,7 @@
         </li>
         {% endif %}
         {% if roles.sales_order.view %}
-        <li class='nav-item dropdown'>
+        {% comment %} <li class='nav-item dropdown'>
           <a class='nav-link dropdown-toggle' href='#' id='sellMenuDropdown' role='button' data-bs-toggle='dropdown'>
             <span class='fas fa-truck icon-header'></span>{% trans "Sell" %}
           </a>
@@ -60,7 +60,7 @@
             <li><a class='dropdown-item' href="{% url 'customer-index' %}"><span class='fas fa-user-tie icon-header'></span>{% trans "Customers" %}</a>
             <li><a class='dropdown-item' href="{% url 'so-index' %}"><span class='fas fa-list icon-header'></span>{% trans "Sales Orders" %}</a></li>
           </ul>
-        </li>
+        </li> {% endcomment %}
         {% endif %}
 
         {% if plugin_nav %}
@@ -105,11 +105,11 @@
       </li>
 
       {% if barcodes %}
-      <li class='nav-item' id='navbar-barcode-li'>
+      {% comment %} <li class='nav-item' id='navbar-barcode-li'>
         <button id='barcode-scan' class='btn position-relative' title='{% trans "Scan Barcode" %}'>
           <span class='fas fa-qrcode'></span>
         </button>
-      </li>
+      </li> {% endcomment %}
       {% endif %}
 
       <li class='nav-item me-2'>
@@ -153,7 +153,7 @@
             </a>
           </li>
           {% if show_about %}
-          <li id='launch-about'>
+          {% comment %} <li id='launch-about'>
             <a class='dropdown-item' href='#'>
               {% if up_to_date %}
               <span class="fas fa-info-circle"></span>
@@ -162,7 +162,7 @@
               {% endif %}
               {% trans "About InvenTree" %}
             </a>
-          </li>
+          </li> {% endcomment %}
           {% endif %}
         </ul>
       </li>
