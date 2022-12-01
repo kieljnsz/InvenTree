@@ -39,7 +39,7 @@ from .views import (AboutView, AppearanceSelectView, CurrencyRefreshView,
                     EditUserView, IndexView, NotificationsView, SearchView,
                     SetPasswordView, SettingsView, auth_request)
 
-admin.site.site_header = "InvenTree Admin"
+admin.site.site_header = "Kambaktik Inventory Admin"
 
 
 apipatterns = [
