@@ -450,22 +450,9 @@ function getAvailableTableFilters(tableKey) {
                 title: '{% trans "Active" %}',
                 description: '{% trans "Show active parts" %}',
             },
-            assembly: {
-                type: 'bool',
-                title: '{% trans "Assembly" %}',
-            },
             unallocated_stock: {
                 type: 'bool',
                 title: '{% trans "Available stock" %}',
-            },
-            component: {
-                type: 'bool',
-                title: '{% trans "Component" %}',
-            },
-            has_ipn: {
-                type: 'bool',
-                title: '{% trans "Has IPN" %}',
-                description: '{% trans "Part has internal part number" %}',
             },
             has_stock: {
                 type: 'bool',
@@ -475,30 +462,6 @@ function getAvailableTableFilters(tableKey) {
                 type: 'bool',
                 title: '{% trans "Low stock" %}',
             },
-            purchaseable: {
-                type: 'bool',
-                title: '{% trans "Purchasable" %}',
-            },
-            salable: {
-                type: 'bool',
-                title: '{% trans "Salable" %}',
-            },
-            starred: {
-                type: 'bool',
-                title: '{% trans "Subscribed" %}',
-            },
-            is_template: {
-                type: 'bool',
-                title: '{% trans "Template" %}',
-            },
-            trackable: {
-                type: 'bool',
-                title: '{% trans "Trackable" %}',
-            },
-            virtual: {
-                type: 'bool',
-                title: '{% trans "Virtual" %}',
-            }
         };
     }
 
